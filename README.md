@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/testimonials-grid-section-with-css-flexbox-and-css-grid-2KZedL7-0I](https://www.frontendmentor.io/solutions/testimonials-grid-section-with-css-flexbox-and-css-grid-2KZedL7-0I)
 - Live Site URL: [https://ryan-ohanlon.github.io/testimonials-grid-section-main/](https://ryan-ohanlon.github.io/testimonials-grid-section-main/)
 
 ## My process
