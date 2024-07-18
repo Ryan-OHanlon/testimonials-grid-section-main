@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Barlow Semi Condensed Medium";
+    src: url(./assets/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Barlow Semi Condensed SemiBold";
+    src: url(./assets/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+    font-weight: 600;
+}
+/*mobile rules*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100vh;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 325px;
+    gap: 2em;
+    margin: 1em;
+}
+
+/*image rules*/
+img {
+    width: 3em;
+    border-radius: 50%;
+}
+
+/*Container elements*/
+.testimonial {
+    box-shadow: 0px 5px 5px hsl(0, 0%, 81%);
+    border-radius: 1vh;
+    padding: 2em 3em;
+}
+
+.bg-violet {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 20px;
+    .name{
+        color: hsl(0, 0%, 100%);
+        font-family: "Barlow Semi Condensed SemiBold";
+    }
+    .title{
+        color: hsla(0, 0%, 100%, .5);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+    .statement{
+        color: hsl(0, 0%, 100%);
+        font-family: "Barlow Semi Condensed SemiBold";   
+    }
+    .quote{
+        color: hsla(0, 0%, 100%, .7);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+    img{
+        border:2px solid hsl(263, 83%, 75%)
+    }
+    
+}
+
+.bg-dark-grayish-blue {
+    background-color: hsl(217, 19%, 35%);
+    .name{
+        color: hsl(0, 0%, 100%);
+        font-family: "Barlow Semi Condensed SemiBold";
+    }
+    .title{
+        color: hsla(0, 0%, 100%, .5);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+    .statement{
+        color: hsl(0, 0%, 100%);
+        font-family: "Barlow Semi Condensed SemiBold";   
+    }
+    .quote{
+        color: hsla(0, 0%, 100%, .7);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+}
+
+.bg-white{
+    background-color: hsl(0, 0%, 100%);
+    .name{
+        color: hsl(217, 19%, 35%);
+        font-family: "Barlow Semi Condensed SemiBold";
+    }
+    .title{
+        color: hsla(217, 19%, 35%, .5);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+    .statement{
+        color: hsl(217, 19%, 35%);
+        font-family: "Barlow Semi Condensed SemiBold";   
+    }
+    .quote{
+        color: hsla(217, 19%, 35%, .7);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+}
+
+.bg-dark-blackish-blue {
+    background-color: hsl(219, 29%, 14%);
+    .name{
+        color: hsl(0, 0%, 100%);
+        font-family: "Barlow Semi Condensed SemiBold";
+    }
+    .title{
+        color: hsla(0, 0%, 100%, .5);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+    .statement{
+        color: hsl(0, 0%, 100%);
+        font-family: "Barlow Semi Condensed SemiBold";   
+    }
+    .quote{
+        color: hsla(0, 0%, 100%, .7);
+        font-family: "Barlow Semi Condensed Medium";
+    }
+    img{
+        border:1.5px solid hsl(263, 83%, 63%)
+    }
+}
+/*image name group*/
+.person {
+    display: flex;
+    align-items: center;
+}
+
+.personname p {
+    margin: 0 0 5px 1rem;
+}
+
+
+/*
+  desktop CSS rules
+  breakpoint at 1024px
+*/
+@media screen and (min-width:1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "daniel daniel jonathan kira"
+        "jeanette patrick patrick kira";
+        gap: 20px;
+        max-width: 1024px;
+        margin: 1em;
+    }
+    .box1{
+        grid-area: daniel;
+    }
+    .box2{
+        grid-area: jonathan;
+    }
+    .box3{
+        grid-area: jeanette;
+    }
+    .box4{
+        grid-area: patrick;
+    }
+    .box5{
+        grid-area: kira;
+    }
+    .attribution{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
